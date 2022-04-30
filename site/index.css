@@ -90,7 +90,6 @@ button{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: .5rem;
 
 }
 .nav-links{
@@ -127,9 +126,10 @@ button{
 .start-btn{
     padding: 19px 45px;
     font-size: 1.75rem;
-    margin: 20px;
+    margin-top: 20px;
     display:inline-block;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 .start-btn:hover{
@@ -151,6 +151,8 @@ button{
     align-items: center;
     justify-content:space-around ;
     flex-direction: column;
+    width: 100%;
+    padding:0;
 }
 
 .why-rust{
@@ -162,6 +164,7 @@ button{
     flex-direction: row;
     justify-content: space-around;
     column-gap:8%;
+    width: 100%;
 }
 .desc-text{
     font-size: 1rem;
@@ -189,7 +192,7 @@ button{
 }
 
 .rust-in-production{
-    padding: 5% 15%;
+    padding: 5% 13%;
 }
 
 .lrn-btn{
@@ -218,17 +221,10 @@ button{
     flex:1;
 }
 .thanks{
-    padding: 5% 15%;
+    padding: 5% 13%;
     color: black;
 }
-.issue-info{
-    flex-basis: 100%;
-    text-align: center;
-    font-size: 18px;
-}
-.social, .help, .terms{
-    flex: 1;
-}
+
 .footer{
     color:white;
     padding: 5% 10%;
@@ -239,6 +235,15 @@ button{
     flex-wrap: wrap;
 }
 
+.issue-info{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.social, .help, .terms{
+    flex: 1;
+}
+
 .footer-links{
     color: #ffc832;
     text-decoration: none;
@@ -246,6 +251,29 @@ button{
 }
 .footer-sub-head{
     font-size: 20px;
+}
+blockquote{
+    border-bottom: 1px dotted black;
+}
+
+.main-quote{
+    display: flex;
+    flex-direction: column;
+}
+.said-by{
+    align-self: flex-end;
+}
+
+.npm-quote, .yelp-quote{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+.comp-logo{
+    padding: 2%;
+}
+.img-cont{
+   padding: 20%;
 }
 
  @media only screen and (max-width: 810px) {
@@ -263,6 +291,10 @@ button{
          column-gap: 30px;
      }
 
+     .btn-download{
+         padding-right: 0;
+     }
+
      .nav-link > a {
          font-size: 15px;
      }
@@ -277,6 +309,7 @@ button{
      .jumbotron{
          display: flex;
          flex-direction: column;
+         padding: 0;
      }
      .container{
          flex-direction: column;
@@ -288,6 +321,41 @@ button{
      .description-text{
          font-size: 1.25rem;
          line-height: unset;
+     }
+     .footer{
+         flex-direction: column;
+     }
+     .rust-in-production{
+         font-size: 20px;
+     }
+     .issue-info{
+         font-size: 16px;
+     }
+     .prod-desc-text{
+         font-size:16px;
+     }
+     .main-quote{
+         display: flex;
+         flex-direction: column;
+     }
+     .npm-quote, .yelp-quote{
+         display: flex;
+         flex-direction: column;
+         padding: 5%;
+     }
+     .said-by{
+         justify-self: right;
+     }
+     .build-with-rust{
+         display: flex;
+         flex-direction: row;
+     }
+     .build{
+         display: flex;
+         flex-direction: column;
+     }
+     .img-cont{
+         padding: 2%;
      }
 
 }
@@ -302,5 +370,50 @@ button{
     }
     .why-rust, .nav-header{
         padding:1%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .issue-info{
+        font-size: 16px;
+    }
+    .prod-desc-text{
+        font-size:16px;
+    }
+    .main-quote{
+        display: flex;
+        flex-direction: column;
+    }
+    .npm-quote, .yelp-quote{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .said-by{
+        justify-self: right;
+    }
+    .why-rust, .build-in-rust, .thanks, .quote-container, .footer, .get-involved{
+        padding:4% 3% 4% 3%;
+    }
+    .comp-logo{
+        padding:1px;
+    }
+    .build-btn{
+        margin-bottom: 4%;
+    }
+    .build-with-rust{
+        display: flex;
+        flex-direction: row;
+    }
+    .build{
+        display: flex;
+        flex-direction: column;
+    }
+    .build-img{
+        height: 40px;
+        width: 40px;
+    }
+    .img-cont{
+        padding: 2%;
     }
 }

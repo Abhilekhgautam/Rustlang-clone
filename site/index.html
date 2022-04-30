@@ -96,41 +96,54 @@
                    how to get started. </p>
            </div>
            <div class = "container bg-prp">
-               <div id = "cl">
-                   <div class = "img-cont">
-                       <img src = "./media/cli.svg" alt="Command line tool" height="96" width="96">
+               <div id = "cl" class="build-with-rust">
+                   <div class="img-cont">
+                       <img class = "build-img" src = "./media/cli.svg" alt="Command line tool" height="96" width="96">
                    </div>
-                   <h3>Command Line</h3>
-                   <p class = "desc-text">Whip up a CLI tool quickly with Rust’s robust ecosystem. Rust helps you maintain your app with
-                       confidence and distribute it with ease. </p>
-                   <button class = "build-btn bg-rd clr-wh">Building Tools</button>
+                   <div class="build">
+                       <h3>Command Line</h3>
+                       <p class = "desc-text">Whip up a CLI tool quickly with Rust’s robust ecosystem. Rust helps you maintain your app with
+                           confidence and distribute it with ease. </p>
+                       <button class = "build-btn bg-rd clr-wh">Building Tools</button>
+                   </div>
+
                </div>
-               <div id = "web-assembly">
-                   <div>
-                       <img src = "./media/webassembly.svg" alt="Web assembly tool" height="96" width="96">
+               <div id = "web-assembly" class="build-with-rust">
+                   <div class="img-cont">
+                       <img class = "build-img" src = "./media/webassembly.svg" alt="Web assembly tool" height="96" width="96">
                    </div>
-                   <h3>Web Assembly</h3>
-                   <p class = "desc-text">Use Rust to supercharge your JavaScript, one module at a time. Publish to npm, bundle with
-                       webpack, and you’re off to the races.</p>
-                   <button class = "build-btn bg-rd clr-wh">Writing Web Apps.</button>
+                   <div>
+                       <h3>Web Assembly</h3>
+                       <p class = "desc-text">Use Rust to supercharge your JavaScript, one module at a time. Publish to npm, bundle with
+                           webpack, and you’re off to the races.</p>
+
+                       <button class = "build-btn bg-rd clr-wh">Writing Web Apps.</button>
+                   </div>
+
                </div>
-               <div id = "networking">
-                   <div>
-                       <img src = "./media/networking.svg" alt="Networking tool" height="96" width="96">
+               <div id = "networking" class="build-with-rust">
+                   <div class="img-cont">
+                       <img class = "build-img" src = "./media/networking.svg" alt="Networking tool" height="96" width="96">
                    </div>
-                   <h3>Networking</h3>
-                   <p class = "desc-text">Predictable performance. Tiny resource footprint. Rock-solid reliability. Rust is great for
-                       network services. </p>
-                   <button class = "build-btn bg-rd clr-wh">Working on Servers</button>
+                   <div class="build">
+                       <h3>Networking</h3>
+                       <p class = "desc-text">Predictable performance. Tiny resource footprint. Rock-solid reliability. Rust is great for
+                           network services. </p>
+                       <button class = "build-btn bg-rd clr-wh">Working on Servers</button>
+                   </div>
+
                </div>
-               <div id = "embeded">
-                   <div>
-                       <img src = "./media/embedded.svg" alt="Embeded system" height="96" width="96">
+               <div id = "embeded" class="build-with-rust">
+                   <div class="img-cont">
+                       <img class = "build-img" src = "./media/embedded.svg" alt="Embeded system" height="96" width="96">
                    </div>
-                   <h3>Embeded</h3>
-                   <p class = "desc-text">Targeting low-resource devices? Need low-level control without giving up high-level conveniences?
-                       Rust has you covered. </p>
-                   <button class = "build-btn bg-rd clr-wh">Starting with embeded</button>
+                   <div class="build">
+                       <h3>Embeded</h3>
+                       <p class = "desc-text">Targeting low-resource devices? Need low-level control without giving up high-level conveniences?
+                           Rust has you covered. </p>
+                       <button class = "build-btn bg-rd clr-wh">Starting with embeded</button>
+                   </div>
+
                </div>
            </div>
 
@@ -139,24 +152,32 @@
        <section class="rust-in-production">
            <div>
                <h2 class="sub-head bor-yl">Rust in Production</h2>
-               <p>Hundreds of companies around the world are using Rust in production today for fast, low-resource,
+               <p class="prod-desc-text">Hundreds of companies around the world are using Rust in production today for fast, low-resource,
                    cross-platform solutions. Software you know and love, like Firefox, Dropbox, and Cloudflare, uses
                    Rust. <b>From startups to large corporations, from embedded devices to scalable web services, Rust is a
                    great fit.</b></p>
            </div>
            <div class="quote-container bg-wh">
-               <blockquote>My biggest compliment to Rust is that it's boring, and this is an amazing compliment.</blockquote>
-               <hr class="light">
-               <p class="said-by">-Chris Dickinson, Engineer at npm, Inc</p>
-               <img src="./media/npm.svg" alt="npm logo" width="220">
 
+               <div class="npm-quote">
+                   <div class="main-quote">
+                       <blockquote>My biggest compliment to Rust is that it's boring, and this is an amazing compliment.</blockquote>
+                       <p class="said-by">-Chris Dickinson, Engineer at npm, Inc</p>
+                   </div>
+
+                   <img class="comp-logo" src="./media/npm.svg" alt="npm logo" width="220">
+               </div>
                <hr>
 
-               <blockquote>All the documentation, the tooling, the community is great - you have all the tools to succeed in
-                   writing Rust code. </blockquote>
-               <hr class="light">
-               <p class="said-by">-Antonio Verardi, Infrastructure Engineer</p>
-               <img src="./media/yelp.png" alt = "yelp logo" height="200">
+               <div class="yelp-quote">
+                   <img class="comp-logo" src="./media/yelp.png" alt = "yelp logo" height="180">
+                   <div class="main-quote">
+                       <blockquote>All the documentation, the tooling, the community is great - you have all the tools to succeed in
+                           writing Rust code. </blockquote>
+                       <p class="said-by">-Antonio Verardi, Infrastructure Engineer</p>
+                   </div>
+
+               </div>
 
                <button class="lrn-btn bg-yl">Learn More</button>
 
@@ -260,12 +281,12 @@
                  </div>
              </div>
 
-           <div class="issue-info">
+            <div class="issue-info">
                <p>
                    Maintained by the Rust Team. See a bug? <a class="footer-links" href="#">File an issue!</a> <br>Looking
                    for the <a class="footer-links" href="#">previous website?</a>
                </p>
-           </div>
+            </div>
        </footer>
 
    </main>
