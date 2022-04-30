@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
     font-family: "Fira Sans", Helvetica, Arial, sans-serif;
@@ -10,21 +11,26 @@ body{
 li{
     list-style: none;
 }
-
-
-
-.f-left{
-    float:left;
+button{
+    cursor:pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    font-weight:500;
+    text-align: center;
+    width:100%;
 }
-.f-right{
-    float: right;
+
+.clr-bl{
+    color: black !important;
 }
+
+.clr-wh{
+    color: white !important;
+}
+
 .mb-5{
     margin-bottom: 5px !important;
-}
-
-.nav-links{
-    list-style: none;
 }
 
 .bg-bl{
@@ -47,11 +53,22 @@ li{
 .bg-yl{
     background-color: #ffc832 !important;
 }
-.mb-10{
-    margin-bottom: 20px;
-}
 .f-wrap{
     flex-wrap: wrap !important;
+}
+.bor-prp{
+    border-bottom: 10px solid #2e2459;
+}
+
+.bor-rd{
+    border-bottom: 10px solid #a72145;
+}
+
+.bor-yl{
+    border-bottom: 10px solid #ffc832;
+}
+.mb-10{
+    margin-bottom: 20px;
 }
 
 .f-col{
@@ -109,20 +126,10 @@ li{
 }
 .start-btn{
     padding: 19px 45px;
-    color:black;
-    background-color: #ffc832;
-    width: 100%;
     font-size: 1.75rem;
     margin: 20px;
-    font-weight:600;
-    text-align: center;
-    border-radius: 4px;
     display:inline-block;
-    cursor: pointer;
-    box-sizing: border-box;
     line-height: 1.6;
-    text-transform:uppercase;
-    border: none;
 }
 
 .start-btn:hover{
@@ -140,7 +147,6 @@ li{
 }
 
 .jumbotron{
-
     display: flex;
     align-items: center;
     justify-content:space-around ;
@@ -148,20 +154,14 @@ li{
 }
 
 .why-rust{
-    background-color: #0b7261 !important;
-    box-sizing: border-box;
-    color:white;
     padding: 5% 15%;
 }
 
 .container{
-    background-color: #0b7261;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     column-gap:8%;
-
-
 }
 .desc-text{
     font-size: 1rem;
@@ -177,73 +177,39 @@ li{
     line-height: 1.25;
     font-weight: 800;
 }
-.bor-prp{
-    border-bottom: 10px solid #2e2459;
-    display: inline-block;
-}
 
-.bor-rd{
-    border-bottom: 10px solid #a72145;
-}
-
-.bor-yl{
-    border-bottom: 10px solid #ffc832;
-}
 .build-in-rust{
-    background-color: #2e2459;
-    box-sizing: border-box;
-    color:white;
     padding: 5% 15%;
 }
 .build-btn{
-    background-color: #a72145;
-    text-transform: uppercase;
     padding: 10px 30px;
-    text-align: center;
-    font-weight: 600;
-    color:white;
-    width: 100%;
-    cursor: pointer;
-    border: none;
+}
+.build-btn:hover{
+    border:1px solid white;
 }
 
-.img-cont{
-    margin: auto;
-
-}
 .rust-in-production{
-    box-sizing: border-box;
     padding: 5% 15%;
 }
 
 .lrn-btn{
-    width: 100%;
-    background-color: #ffc832;
-    text-transform: uppercase;
-    border: none;
     padding: 15px 20px;
-    border-radius: 4px;
-    font-weight: 500;
 }
 .lrn-btn:hover{
     border: 1px solid black;
 }
 .light{
-    opacity:0.5;
+    opacity:0.3;
 }
 
 .get-involved{
-    box-sizing: border-box;
-    color:white;
     padding: 5% 15%;
 }
 .btn-more{
-    width: 100%;
     padding: 15px 20px;
-    border:none;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
+}
+.btn-more:hover{
+    border: 1px solid white;
 }
 .contribute{
     flex-basis: 100%;
@@ -252,34 +218,49 @@ li{
     flex:1;
 }
 .thanks{
-    box-sizing: border-box;
-    color:white;
     padding: 5% 15%;
     color: black;
 }
-
+.issue-info{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.social, .help, .terms{
+    flex: 1;
+}
 .footer{
-    box-sizing: border-box;
     color:white;
     padding: 5% 10%;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer-links{
     color: #ffc832;
     text-decoration: none;
+    font-size: 15px;
+}
+.footer-sub-head{
+    font-size: 20px;
 }
 
  @media only screen and (max-width: 810px) {
 
      .navbar-container{
         flex-direction: column;
-         justify-content: center;
+         padding: 0;
+         margin:0;
          align-items: center;
-         flex-flow:column wrap;
+     }
+
+     .nav-links{
+         justify-content: space-around;
+         padding: 2% 15%;
+         column-gap: 30px;
      }
 
      .nav-link > a {
@@ -287,6 +268,11 @@ li{
      }
      .nav-header{
          flex-direction: column;
+         padding:2%;
+         margin-top:15px;
+     }
+     .download-link{
+         font-size: 15px;
      }
      .jumbotron{
          display: flex;
@@ -307,27 +293,14 @@ li{
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 811px){
-
-    .nav-link{
-        align-self: center;
-    }
     .nav-link > a {
-        text-align: center;
         font-size: 15px;
-        align-self: center;
     }
     .jumbotron{
         display: flex;
         flex-direction: column;
     }
-    .nav-header{
-        padding: 1%;
-    }
-    .why-rust{
+    .why-rust, .nav-header{
         padding:1%;
     }
 }
-
-
-
-
