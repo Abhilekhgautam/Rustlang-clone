@@ -21,6 +21,10 @@ button{
     width:100%;
 }
 
+.f-md{
+    font-size: 22px;
+}
+
 .clr-bl{
     color: black !important;
 }
@@ -176,7 +180,7 @@ button{
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     line-height: 1.25;
     font-weight: 800;
 }
